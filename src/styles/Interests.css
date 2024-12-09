@@ -1,0 +1,49 @@
+.interests-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.interests-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.interests-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.interests-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.interests-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .interests-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interests-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
