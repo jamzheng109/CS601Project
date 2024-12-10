@@ -12,6 +12,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  width: 100%;
 }
 
 .nav-links {
@@ -53,6 +54,32 @@ header {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.contact-info .email,
+.contact-info .phone {
+  color: #fff;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #00b4d8;
+}
+
 @media (max-width: 768px) {
   .header-title {
     font-size: 2rem;
@@ -64,6 +91,13 @@ header {
 
   .nav-links a {
     padding: 5px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    gap: 8px;
   }
 }
 
@@ -80,5 +114,15 @@ header {
 
   .nav-links a {
     display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .header-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-info {
+    font-size: 0.8rem;
   }
 }

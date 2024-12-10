@@ -8,8 +8,8 @@ const Home: React.FC = () => {
       <div className="welcome-section">
         <h1>Welcome to My Portfolio</h1>
         <p>
-          Hello! I'm <strong>James Zheng</strong>, a passionate software developer. Explore my portfolio to learn more about me,
-          my interests, and my work!
+          Hello! My name is <strong>James Zheng</strong>. Explore my portfolio to learn more about me,
+          my interests, and more!
         </p>
       </div>
       <div className="skills-section">
