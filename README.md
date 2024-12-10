@@ -13,6 +13,7 @@ available.
 - **Biography**: A brief introduction about myself.
 - **Gallery**: A showcase of places I visited.
 - **Interest**: What I like to do in my free-time and hobbies.
+
 ---
 
 ### Topics incorporated:
