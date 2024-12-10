@@ -1,0 +1,16 @@
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
