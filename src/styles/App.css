@@ -30,14 +30,6 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 20px;
-}
-
 section {
   margin-bottom: 40px;
 }

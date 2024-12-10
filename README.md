@@ -2,8 +2,10 @@
 
 ### Overview:
 
-This project consist of me creating a portfolio showcasing my skills and projects that
-I have completed in the past.
+This project consist of me creating a professional portfolio showcasing my skills, biography, interests, contact form,
+displaying resume, and a photo gallery. The project will consist of a homepage and links to these different
+topics and each page will display something different. All codes will be stored on GitHub and will be publicly 
+available. 
 
 ---
 
@@ -12,9 +14,10 @@ I have completed in the past.
 - Web languages
 - HTML 5
 - CSS 3
-- JavaSCript
+- JavaScript
 - TypeScript
 - React
 - Web page layout and design
 - Document Object Model (DOM)
 - Website usability
+

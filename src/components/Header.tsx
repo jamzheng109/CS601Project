@@ -4,17 +4,14 @@ import '../styles/Header.css';
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <nav>
-        <ul>
+    <header className="header">
+      <nav className="nav-container">
+        <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/biography">Biography</Link></li>
-          <li><Link to="/interests">Interests</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
-          <li><Link to="/gallery">Photo Gallery</Link></li>
-          <li><Link to="/skills">Skills</Link></li>
+          <li><Link to="/contact">Contact Me</Link></li>
         </ul>
+
+        <h1 className="header-title">James Zheng</h1>
       </nav>
     </header>
   );

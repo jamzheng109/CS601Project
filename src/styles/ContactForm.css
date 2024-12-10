@@ -1,21 +1,29 @@
 .contact-form-section {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  margin: 30px auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form-section:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form-section h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .form-group {
@@ -27,45 +35,77 @@
   color: #333;
   margin-bottom: 5px;
   display: block;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px 15px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
 }
 
 .form-group textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 120px;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #333;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #3498db;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #2980b9;
+  transform: translateY(-2px);
 }
 
 .success-message {
   font-size: 1.2rem;
-  color: green;
-  font-weight: bold;
+  color: #28a745;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .error-message {
   font-size: 1rem;
-  color: red;
+  color: #e74c3c;
+  font-weight: 500;
   margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: 20px;
+  }
+
+  .contact-form-section h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    width: 100%;
+  }
 }
