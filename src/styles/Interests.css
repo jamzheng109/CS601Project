@@ -1,49 +1,70 @@
 .interests-section {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
+  padding: 40px;
+  background: linear-gradient(135deg, #f4a261, #e76f51);
+  color: #fff;
   text-align: center;
 }
 
 .interests-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.interests-section h2::before,
+.interests-section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #fff;
+  margin: 10px auto;
+  border-radius: 2px;
 }
 
 .interests-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
 }
 
-.interests-item {
-  background-color: #fff;
-  padding: 20px;
+.interests-list li {
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  padding: 20px;
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.interests-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.interests-list li:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
-.interests-item p {
-  font-size: 1rem;
-  color: #555;
+.interests-list li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #ffcd3c, #ff6f61);
 }
 
-@media (max-width: 768px) {
-  .interests-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .interests-item {
-    width: 90%;
-    margin-bottom: 20px;
-  }
+.interests-list li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #ff6f61, #ffcd3c);
 }
